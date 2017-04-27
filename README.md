@@ -11,3 +11,7 @@ Creating a new base image is simple, as all commits into this repo get auto buil
 4. Be sure you *do not* delete the branch after merge.
 
 5. Watch your tagged version appear [here](https://hub.docker.com/r/madetech/docker-rails-deps/)
+
+# Alpine boxes
+
+Please do not merge `alpine` boxes into master, they are to be considered experimental and _might_ cause needless pain
