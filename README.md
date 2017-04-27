@@ -1,19 +1,13 @@
-# Rails Docker base image
+# Creating a new `rails-deps` base box
 
-Make changes to the `Dockerfile` and then run:
+Creating a new base image is simple, as all commits into this repo get auto built by https://hub.docker.com triggers
 
-```
-docker build -t madetech/rails-deps:<tag name> .
-```
+1. Create a new branch, which is named to match the ruby version. The branch name will be used as the tag. e.g. Using Ruby 2.4.1 you would name the branch `ruby2.4.1`
 
-Give the image a tag name. For Ruby versions, use the format `rubyX.Y.Z`. For Ruby 2.3.0, the command would be:
+2. Make changes to the `Dockerfile`
 
-```
-docker build -t madetech/rails-deps:ruby2.3.0 .
-```
+3. Submit a PR to `master`. This will update the `latest` tag.
 
-You then need to push the image to Docker Hub:
+4. Be sure you *do not* delete the branch after merge.
 
-```
-docker push madetech/rails-deps:ruby2.3.0
-```
+5. Watch your tagged version appear [here](https://hub.docker.com/r/madetech/docker-rails-deps/)
