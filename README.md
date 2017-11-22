@@ -2,7 +2,7 @@
 
 Creating a new base image is simple, as all commits into this repo get auto built by https://hub.docker.com triggers
 
-1. Create a new branch, which is named to match the ruby version. The branch name will be used as the tag. e.g. Using Ruby 2.4.1 you would name the branch `ruby2.4.1`
+1. Create a new branch, which is named to match the ruby version. The branch name will be used as the tag. e.g. Using Ruby 2.4.2 you would name the branch `ruby2.4.2`
 
 2. Make changes to the `Dockerfile`
 
