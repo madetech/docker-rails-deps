@@ -10,6 +10,6 @@ RUN git clone https://github.com/sstephenson/ruby-build.git /tmp/ruby-build && \
   cd / && \
   rm -rf /tmp/ruby-build
 
-RUN ruby-build -v 2.4.1 /usr/local
+RUN ruby-build -v 2.5.0 /usr/local
 RUN gem install bundler rubygems-bundler --no-rdoc --no-ri
 RUN gem regenerate_binstubs
