@@ -1,6 +1,6 @@
 FROM debian:stretch
 
-RUN apt update -qq && apt -y install build-essential git openssl libreadline-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev default-libmysqlclient-dev libpq-dev imagemagick libmagickwand-dev libffi-dev mysql-client ffmpeg apt-transport-https phantomjs
+RUN apt update -qq && apt -y install build-essential git libreadline-dev curl git-core zlib1g zlib1g-dev libssl1.0-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev default-libmysqlclient-dev libpq-dev imagemagick libmagickwand-dev libffi-dev mysql-client ffmpeg apt-transport-https phantomjs
 
 # We can't use the distro provided node, so insteall it from the nodesource ppa
 RUN curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
